@@ -1,0 +1,113 @@
+2017-07-25 23:59:39.189  INFO 2456 --- [main] service.ZookeeperCheckServiceTest        : Starting ZookeeperCheckServiceTest on AFOHC-703281653 with PID 2456 (D:\develop\source\dnkx\Health-Spring-Boot\target\test-classes started by Administrator in D:\develop\source\dnkx\Health-Spring-Boot)
+2017-07-25 23:59:39.190  INFO 2456 --- [main] service.ZookeeperCheckServiceTest        : The following profiles are active: test
+2017-07-25 23:59:39.245  INFO 2456 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@72cde7cc: startup date [Tue Jul 25 23:59:39 CST 2017]; root of context hierarchy
+2017-07-25 23:59:40.310  INFO 2456 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@72cde7cc: startup date [Tue Jul 25 23:59:39 CST 2017]; root of context hierarchy
+2017-07-25 23:59:40.384  INFO 2456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hostStatus/hostStatusCheck]}" onto public java.lang.String health.springboot.zookeeper.controller.HostStatusCheckController.hostStatusCheck()
+2017-07-25 23:59:40.387  INFO 2456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/zookeeper/zookeeperCheck]}" onto public java.lang.String health.springboot.zookeeper.controller.ZookeeperCheckController.zookeeperCheck()
+2017-07-25 23:59:40.392  INFO 2456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-25 23:59:40.392  INFO 2456 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2017-07-25 23:59:40.783  INFO 2456 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@72cde7cc: startup date [Tue Jul 25 23:59:39 CST 2017]; root of context hierarchy] and template loader path [classpath:/templates/]
+2017-07-25 23:59:40.784  INFO 2456 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2017-07-25 23:59:40.805  WARN 2456 --- [main] o.s.b.a.f.FreeMarkerAutoConfiguration    : Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2017-07-25 23:59:40.853  INFO 2456 --- [main] service.ZookeeperCheckServiceTest        : Started ZookeeperCheckServiceTest in 1.941 seconds (JVM running for 2.549)
+2017-07-25 23:59:40.871  INFO 2456 --- [main] h.s.z.s.impl.ZookeeperCheckServiceImpl   : Execute the script : zookeeperHealth , write into file:zookeeperCheck
+2017-07-25 23:59:42.265  INFO 2456 --- [main] h.s.z.s.impl.ZookeeperCheckServiceImpl   : read file : zookeeperCheck ,result is : 139.224.54.145 mng1 :Zookeeper version: 3.4.9-1757313, built on 08/23/2016 06:50 GMT    <br>
+Clients:    <br>
+ /10.28.100.165:60986[1](queued=0,recved=126926,sent=127372)    <br>
+ /127.0.0.1:32800[0](queued=0,recved=1,sent=0)    <br>
+ /10.28.100.170:53380[1](queued=0,recved=126925,sent=127371)    <br>
+    <br>
+Latency min/avg/max: 0/0/22    <br>
+Received: 1823416    <br>
+Sent: 1827696    <br>
+Connections: 3    <br>
+Outstanding: 0    <br>
+Zxid: 0x100017cb6    <br>
+Mode: follower    <br>
+Node count: 369    <br>
+<br><br>139.224.25.215 mng2 :Zookeeper version: 3.4.9-1757313, built on 08/23/2016 06:50 GMT    <br>
+Clients:    <br>
+ /10.27.248.53:55496[1](queued=0,recved=166737,sent=167009)    <br>
+ /10.28.100.110:53810[1](queued=0,recved=167426,sent=167894)    <br>
+ /127.0.0.1:47082[0](queued=0,recved=1,sent=0)    <br>
+    <br>
+Latency min/avg/max: 0/0/1120    <br>
+Received: 2440856    <br>
+Sent: 2445659    <br>
+Connections: 3    <br>
+Outstanding: 0    <br>
+Zxid: 0x100017cb6    <br>
+Mode: follower    <br>
+Node count: 369    <br>
+<br><br>139.196.145.133 cashier1 :Zookeeper version: 3.4.9-1757313, built on 08/23/2016 06:50 GMT    <br>
+Clients:    <br>
+ /127.0.0.1:46930[0](queued=0,recved=1,sent=0)    <br>
+ /10.28.1.144:40960[1](queued=0,recved=312100,sent=316421)    <br>
+ /10.27.57.213:43548[1](queued=0,recved=11418,sent=11422)    <br>
+ /10.28.101.200:43342[1](queued=0,recved=124198,sent=124286)    <br>
+    <br>
+Latency min/avg/max: 0/0/900    <br>
+Received: 2498539    <br>
+Sent: 2506988    <br>
+Connections: 4    <br>
+Outstanding: 0    <br>
+Zxid: 0x100017cb6    <br>
+Mode: leader    <br>
+Node count: 369    <br>
+<br><br>139.196.145.158 cashier2 :Zookeeper version: 3.4.9-1757313, built on 08/23/2016 06:50 GMT    <br>
+Clients:    <br>
+ /127.0.0.1:34632[0](queued=0,recved=1,sent=0)    <br>
+ /10.28.100.168:56846[1](queued=0,recved=167432,sent=167900)    <br>
+ /10.28.101.234:37712[1](queued=0,recved=124196,sent=124284)    <br>
+ /10.27.57.221:40992[1](queued=0,recved=11420,sent=11424)    <br>
+ /10.28.97.162:47188[1](queued=0,recved=2565,sent=2565)    <br>
+    <br>
+Latency min/avg/max: 0/0/584    <br>
+Received: 2416163    <br>
+Sent: 2421249    <br>
+Connections: 5    <br>
+Outstanding: 0    <br>
+Zxid: 0x100017cb6    <br>
+Mode: follower    <br>
+Node count: 369    <br>
+<br><br>139.224.55.150 app :Zookeeper version: 3.4.9-1757313, built on 08/23/2016 06:50 GMT    <br>
+Clients:    <br>
+ /10.28.93.38:36504[1](queued=0,recved=2563,sent=2563)    <br>
+ /10.27.248.27:39180[1](queued=0,recved=166737,sent=167009)    <br>
+ /127.0.0.1:45418[0](queued=0,recved=1,sent=0)    <br>
+    <br>
+Latency min/avg/max: 0/0/8702    <br>
+Received: 5435291    <br>
+Sent: 5460550    <br>
+Connections: 3    <br>
+Outstanding: 0    <br>
+Zxid: 0x100017cb6    <br>
+Mode: follower    <br>
+Node count: 369    <br>
+<br><br>
+2017-07-25 23:59:44.487  INFO 2456 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [util.MailUtilTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-25 23:59:44.492  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-25 23:59:44.495  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-07-25 23:59:44.496  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2017-07-25 23:59:44.497  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@57402ba1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@56913163, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@702b06fb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@a18649a]
+2017-07-25 23:59:44.504  INFO 2456 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [util.SSHHelperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-25 23:59:44.507  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-25 23:59:44.509  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-07-25 23:59:44.510  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2017-07-25 23:59:44.510  INFO 2456 --- [main] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3ce53f6a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2d82408, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3ee69ad8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@f679798]
+2017-07-25 23:59:44.702  INFO 2456 --- [main] util.SSHHelperTest                       : zookeeper health check:  Zookeeper version: 3.4.9-1757313, built on 08/23/2016 06:50 GMT    <br>
+Clients:    <br>
+ /192.168.5.100:48212[1](queued=0,recved=12923,sent=13131)    <br>
+ /127.0.0.1:54276[0](queued=0,recved=1,sent=0)    <br>
+ /192.168.5.100:35457[1](queued=0,recved=126150,sent=127037)    <br>
+    <br>
+Latency min/avg/max: 0/4/877    <br>
+Received: 1560426    <br>
+Sent: 1577503    <br>
+Connections: 3    <br>
+Outstanding: 0    <br>
+Zxid: 0xc6f34    <br>
+Mode: standalone    <br>
+Node count: 252    <br>
+
+2017-07-25 23:59:44.710  INFO 2456 --- [Thread-1] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@72cde7cc: startup date [Tue Jul 25 23:59:39 CST 2017]; root of context hierarchy

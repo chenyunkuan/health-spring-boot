@@ -1,0 +1,60 @@
+server:
+    port: 10080
+    context-path:
+
+logging:
+    path: target
+    file: health.log
+    level:
+        tk.mybatis: INFO
+#spring:
+#    datasource:
+#        url: jdbc:mysql://192.168.5.10:3306/dnkx_manage
+#        username: root
+#        password: root
+
+  # 服务器地址
+mymail.host: smtp.ryanljr.cn
+ # 发件人的邮箱
+mymail.sender: chenzhengjian@dounikaixin.cn
+ # 收件人的邮箱
+mymail.receiver:
+ - baoweipeng@dounikaixin.cn
+ - chenyiyang@dounikaixin.cn
+ - lijincheng@dounikaixin.cn
+ - zhangjiajun@dounikaixin.cn
+ - chenyunkuan@dounikaixin.cn
+ - chenzhengjian@dounikaixin.cn
+ - qiming@dounikaixin.cn
+ # 账号
+mymail.username: chenzhengjian@dounikaixin.cn
+ # 密码
+mymail.password: JingYa22.
+
+
+online.apphost: 172.19.4.137
+#express-site
+online.cashier1host: 172.19.2.197
+online.cashier2host: 172.19.4.136
+online.mng1host: 172.19.4.134
+#settlement
+online.mng2host: 172.19.2.200
+online.commerce: 172.19.2.199
+online.name: tomcat
+online.password: 5pF3##99
+online.command: echo stat|nc 127.0.0.1 2181
+online.port: 22
+
+#这里需要用内网ip加tomcat端口
+hostStatus.app1host: 172.19.2.198:16000
+hostStatus.app2host: 172.19.4.137:16000
+hostStatus.cashier1host: 172.19.2.201:16000
+hostStatus.cashier2host: 172.19.4.136:16000
+hostStatus.mng1host: 172.19.4.134:16000
+hostStatus.mng2host: 172.19.2.196:16000
+hostStatus.settlement1host:  172.19.2.200:16000
+hostStatus.settlement2host:  172.19.4.135:16000
+hostStatus.commerce1host: 172.19.2.199:16000
+hostStatus.commerce2host: 172.19.4.138:16000
+hostStatus.site1host: 172.19.4.139:16000
+hostStatus.site2host: 172.19.2.197:16000

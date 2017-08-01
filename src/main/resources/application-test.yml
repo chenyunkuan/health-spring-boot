@@ -1,0 +1,52 @@
+server:
+    port: 8899
+    context-path:
+
+logging:
+    path: /home/log/health
+    file: health.log
+    level:
+        tk.mybatis: INFO
+
+#spring:
+#    datasource:
+#        initialize: false
+##        url: jdbc:mysql://192.168.5.10:3306/dnkx_manage
+##        username: root
+##        password: root
+
+
+  # 服务器地址
+mymail.host: smtp.ryanljr.cn
+ # 发件人的邮箱
+mymail.sender: chenzhengjian@dounikaixin.cn
+ # 收件人的邮箱
+mymail.receiver:
+ - zhangjiajun@dounikaixin.cn
+ # 账号
+mymail.username: chenzhengjian@dounikaixin.cn
+ # 密码
+mymail.password: JingYa22.
+
+
+online.apphost: 139.224.55.150
+online.cashier1host: 139.196.145.133
+online.cashier2host: 139.196.145.158
+online.mng1host: 139.224.54.145
+online.mng2host: 139.224.25.215
+online.name: tomcat
+online.password: 5pF3##99
+online.command: echo stat|nc 127.0.0.1 2181
+online.port: 22
+
+hostStatus.app1host: app2.dounikaixin.cn
+hostStatus.cashier1host: cashier.dounikaixin.cn
+hostStatus.cashier2host: 139.196.145.158
+hostStatus.mng1host:  admin.dounikaixin.cn
+hostStatus.mng2host: 139.224.25.215
+hostStatus.settlement1host:  settlement.dounikaixin.cn
+hostStatus.settlement2host:  admin.dounikaixin.cn
+hostStatus.commerce1host: commerce.dounikaixin.cn
+hostStatus.commerce2host: commerce.dounikaixin.cn
+hostStatus.site1host: site.dounikaixin.cn
+hostStatus.site2host: site.dounikaixin.cn
